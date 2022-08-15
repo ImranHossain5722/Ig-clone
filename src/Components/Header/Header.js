@@ -12,34 +12,6 @@ import imran from "../../Assets/Images/story_image.jpg";
 const Header = () => {
     return (
       <div className="navbar ">
-  
-          {/* for mobile menu */}
-          <div className="bg-[#3B5998]  border-gray-200 dark:bg-gray-900 shadow-md py-2 flex lg:hidden">
-          <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 md:px-6 py-2.5">
-          <div class="flex place-items-end gap-3 ">
-              
-              <div className="topbarIconItem bg-bg-[#3B5998]  border border-white hover:bg-gray-300 p-2 rounded-full ">
-                <BsPersonFill className="text-white" />
-              </div>
-            </div>
-            <div className="flex items-center   lg:w-1/2  py-2 border-b">
-              <GoSearch className="ml-[20px] text-sm text-white" />
-              <input
-                className="searchbar bg-[#3B5998] text-white font-sembold pl-1 focus:outline-none "
-                placeholder="Search"
-              />
-            </div>
-            <div class="flex place-items-end gap-3 ">
-              
-            <div className="topbarIconItem text-white hover:bg-gray-300 p-2 rounded-full">
-                <HiHome className=" text-lg " />
-              </div>
-            </div>
-  
-          </div>
-          </div>
-          
-  
               {/* desktop mmeu */}
      
         <nav class="bg-white w-full lg:w-full h-[70px] z-50 border-b-2 fixed top-0 py-4 border-[#DBDBDB] dark:bg-gray-9">
@@ -47,8 +19,8 @@ const Header = () => {
            {/* logo fir desktop */}
           <div class="flex  justify-evenly  mx-auto  max-w-screen-full
          ">
-            <a href="/" class=" hidden lg:flex items-start pl-4  ">
-              <img src={logo} class="mr-3 w-[100px]  sm:h-9" alt="Logo" />
+            <a href="/" class="flex items-start pl-4  ">
+              <img src={logo} class="mr-3 w-40 h-10 " alt="Logo" />
             </a>
   
                 {/* searcbar for destop */}
@@ -68,7 +40,7 @@ const Header = () => {
               </div>
               
                {/* for destop icon  */}
-              <div className=" lg:flex topbarIconItem p-2">
+              <div className=" hidden lg:flex topbarIconItem p-2">
                 <FiSend className="text-[30px]"/>
               </div>
               <div className="lg:flex topbarIconItem p-2">

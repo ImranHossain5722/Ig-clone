@@ -68,7 +68,7 @@ const CreateRoom = () => {
             <SwiperSlide key={user.id}>
               <div class="avatar online py-8 ">
                 <div class=" w-28">
-                  <img className= " avter-image w-16 h-16 rounded-full gap-4" src={user.image} />
+                  <img className= " avter-image  w-11 h-11 lg:w-16 lg:h-16 rounded-full gap-4" src={user.image}  alt="" />
                   <p>{user.name}</p>
                 </div>
               </div>
