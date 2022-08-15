@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../Assets/Images/Tier5books.png";
+import logo from "../../Assets/Images/T5Insta.png";
 import { GoSearch } from "react-icons/go";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { BsPersonFill} from "react-icons/bs";
@@ -44,20 +44,21 @@ const Header = () => {
   
               {/* desktop mmeu */}
      
-        <nav class="bg-white border-gray-200 dark:bg-gray-900 shadow-md lg:fixed  top-20 lg:top-0  w-full lg:w-full h-[80px] z-50 py-2">
+        <nav class="bg-white border-gray-200 dark:bg-gray-900  lg:fixed  top-20 lg:top-0  w-full lg:w-full h-[60px] z-50 py-2">
   
                 {/* logo fir desktop */}
-          <div class="flex  justify-between items-center  max-w-screen-full  py-2.5">
+          <div class="flex  justify-evenly items-center  max-w-screen-full 
+        border-b-2  border-[#DBDBDB] py-2.5">
             <a href="/" class=" hidden lg:flex items-start pl-4  ">
-              <img src={logo} class="mr-3 w-[180px]  sm:h-9" alt="Logo" />
+              <img src={logo} class="mr-3 w-[100px]  sm:h-9" alt="Logo" />
             </a>
   
                 {/* searcbar for destop */}
-            <div className=" hidden lg:flex items-center bg-gray-100  max-w-sm md:max-w-md lg:w-1/2 rounded-2xl py-2 hover:bg-gray-200 ">
+            <div className=" hidden lg:flex items-center bg-gray-100  max-w-sm md:max-w-md lg:w-1/2 rounded-2xl py-4 hover:bg-gray-200 ">
               <GoSearch className="ml-[20px] text-sm text-gray-500" />
               <input
                 className="sm:max-w-sm md:max-w-md lg:w-full searchbar bg-[#80808000] text-black font-sembold pl-1 focus:outline-none "
-                placeholder="Search Tier5Fbooks "
+                placeholder="Search "
               />
             </div>
   
