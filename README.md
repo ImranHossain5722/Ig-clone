@@ -3,7 +3,7 @@
 
 # project live link: https://igclone-82335.web.app/
 
-# project GitHub Link: https://github.com/ImranHossain5722/tier5-fbooks
+# project GitHub Link: https://github.com/ImranHossain5722/Ig-clone
 # Use Teecnolgy
  * React js
  * React icon
