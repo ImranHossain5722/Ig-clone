@@ -1,16 +1,13 @@
 import React from "react";
 import logo from "../../Assets/Images/T5Insta.png";
 import { GoSearch } from "react-icons/go";
-import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { BsPersonFill} from "react-icons/bs";
-import { BsMessenger } from "react-icons/bs";
+import { HiHome } from "react-icons/hi";
 
-import { BsFillBellFill } from "react-icons/bs";
-import { ImNewspaper } from "react-icons/im";
-import { AiOutlineShop } from "react-icons/ai";
-import { HiOutlineUsers } from "react-icons/hi";
-import { FiYoutube } from "react-icons/fi";
-import { AiOutlineBell } from "react-icons/ai";
+import { FiSend } from "react-icons/fi";
+import { AiOutlineHeart} from "react-icons/ai";
+import { MdOutlineExplore} from "react-icons/md";
+import { FiPlusSquare } from "react-icons/fi";
 import imran from "../../Assets/Images/story_image.jpg";
 const Header = () => {
     return (
@@ -35,26 +32,27 @@ const Header = () => {
             <div class="flex place-items-end gap-3 ">
               
             <div className="topbarIconItem text-white hover:bg-gray-300 p-2 rounded-full">
-                <BsMessenger className=" text-lg " />
+                <HiHome className=" text-lg " />
               </div>
             </div>
   
           </div>
           </div>
+          
   
               {/* desktop mmeu */}
      
-        <nav class="bg-white border-gray-200 dark:bg-gray-900  lg:fixed  top-20 lg:top-0  w-full lg:w-full h-[60px] z-50 py-2">
+        <nav class="bg-white w-full lg:w-full h-[70px] z-50 border-b-2 fixed top-0 py-4 border-[#DBDBDB] dark:bg-gray-9">
   
-                {/* logo fir desktop */}
-          <div class="flex  justify-evenly items-center  max-w-screen-full 
-        border-b-2  border-[#DBDBDB] py-2.5">
+           {/* logo fir desktop */}
+          <div class="flex  justify-evenly  mx-auto  max-w-screen-full
+         ">
             <a href="/" class=" hidden lg:flex items-start pl-4  ">
               <img src={logo} class="mr-3 w-[100px]  sm:h-9" alt="Logo" />
             </a>
   
                 {/* searcbar for destop */}
-            <div className=" hidden lg:flex items-center bg-gray-100  max-w-sm md:max-w-md lg:w-1/2 rounded-2xl py-4 hover:bg-gray-200 ">
+            <div className="flex items-center bg-gray-100  max-w-sm md:max-w-md lg:w-1/2 rounded-2xl py-2 hover:bg-gray-200 ">
               <GoSearch className="ml-[20px] text-sm text-gray-500" />
               <input
                 className="sm:max-w-sm md:max-w-md lg:w-full searchbar bg-[#80808000] text-black font-sembold pl-1 focus:outline-none "
@@ -63,34 +61,24 @@ const Header = () => {
             </div>
   
             <div class="flex  items-end  mx-auto md:mx-auto  gap-8 md:gap-8 lg:mx-0 lg:gap-3 pr-4">
-                  {/* news feed icon for mobile  */}
-              <div className=" lg:hidden topbarIconItem p-2 rounded-full">
-                <ImNewspaper className=" flex items-center text-lg text-[30px]" />
-              </div>
-                  {/* news feed icon for mobile  */}
-              <div className="lg:hidden topbarIconItem  p-2 rounded-full">
-                <HiOutlineUsers className=" text-lg flex items-center text-[30px]" />
-              </div>
-                  {/* news feed icon for mobile  */}
-              <div className="lg:hidden topbarIconItem p-2 rounded-full">
-                <AiOutlineShop className=" text-lg flex items-center text-[30px] " />
-              </div>
-  
-                  {/* news feed watch  icon for mobile  */}
-              <div className=" flex items-center justify-center lg:hidden topbarIconItem  p-2 rounded-full">
-                <FiYoutube className=" text-lg flex items-center text-[30px]" />
-              </div>
-              <div className="  flex lg:hidden topbarIconItem p-2 rounded-full text-[30px]">
-                <AiOutlineBell/>
-              </div>
+               
               {/* for destop icon  */}
-              <div className="hidden lg:flex topbarIconItem bg-gray-200 hover:bg-gray-300 p-2 rounded-full">
-                <BsMessenger className=" text-lg " />
+              <div className="hidden lg:flex topbarIconItem p-2 ">
+                < HiHome className=" text-[32px]" />
               </div>
               
                {/* for destop icon  */}
-              <div className=" hidden lg:flex topbarIconItem bg-gray-200 hover:bg-gray-300 p-2 rounded-full">
-                <BsFillBellFill />
+              <div className=" lg:flex topbarIconItem p-2">
+                <FiSend className="text-[30px]"/>
+              </div>
+              <div className="lg:flex topbarIconItem p-2">
+                < FiPlusSquare className="text-[30px]"/>
+              </div>
+              <div className=" lg:flex topbarIconItem p-2">
+                < MdOutlineExplore  className="text-[30px]"/>
+              </div>
+              <div className="lg:flex topbarIconItem p-2">
+                < AiOutlineHeart className="text-[30px]"/>
               </div>
                {/* for destop icon  */}
               <div style={{
@@ -98,8 +86,8 @@ const Header = () => {
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
-              }} className="hidden lg:flex topbarIconItem bg-gray-200 hover:bg-gray-300 p-2 rounded-full ">
-                < MdOutlineKeyboardArrowDown className="bg-gray-200 rounded-full relative top-5 left-2"/>
+              }} className="lg:flex  bg-gray-200 hover:bg-gray-300 mb-2 rounded-full w-8 h-8 ">
+                 
               </div>
             </div>
           </div>

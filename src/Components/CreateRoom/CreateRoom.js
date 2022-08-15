@@ -30,7 +30,7 @@ const CreateRoom = () => {
     <div className="bg-white mx-auto max-w-sm md:max-w-md lg:max-w-[750px] rounded-xl py-2">
       {/* title section */}
 
-      <div className="mt-6">
+      <div className="">
         <Swiper
           breakpoints={{
             640: {
@@ -47,7 +47,7 @@ const CreateRoom = () => {
             },
           }}
           // spaceBetween={0}
-          loop={false}
+          loop={true}
           navigation={{
             prevEl: "#prev_slide",
             nextEl: "#next_slide",
@@ -63,23 +63,13 @@ const CreateRoom = () => {
             swiper.navigation.update();
           }}
         >
-          <SwiperSlide>
-
-
-            <div className="swiper-slide py-6 flex items-center justify-center hover:fill-blue-500">
-              <div>
-                <button className=" flex items-center bg-white border border-1-gray-200 rounded-2xl p-2 text-[#1877F2] text-[11px]">
-                  <MdVideoCall className="text-[#B846AA] 
-                  text-[30px]" /> Create room
-                </button>
-              </div>
-            </div>
-          </SwiperSlide>
+         
           {users?.map((user) => (
             <SwiperSlide key={user.id}>
-              <div class="avatar online mt-[30px]">
-                <div class="w-16 ">
-                  <img className= "w-6 h-6 rounded-full gap-4" src={user.image} />
+              <div class="avatar online py-8 ">
+                <div class=" w-28">
+                  <img className= " avter-image w-16 h-16 rounded-full gap-4" src={user.image} />
+                  <p>{user.name}</p>
                 </div>
               </div>
 

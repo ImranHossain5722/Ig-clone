@@ -3,7 +3,7 @@ import { AiFillHome } from "react-icons/ai";
 import { BsGiftFill } from "react-icons/bs";
 import group2 from "../../Assets/Images/group2.jpg";
 import wp from "../../Assets/Images/wp.png";
-import jira from "../../Assets/Images/jira.jfif";
+import imran from "../../Assets/Images/story_image.jpg";
 import giftbox from "../../Assets/Images/giftbox.png";
 import "./RightSideBar.css";
 import { RiVideoAddFill } from "react-icons/ri";
@@ -21,33 +21,33 @@ const RightSideBar = () => {
   }, []);
     
   return (
-    <div className="RightSideBar">
+    <div className="RightSideBar mt-14" >
       <div class="flex items-center  hover:bg-[#E4E6E9] dark:bg-gray-700 dark:border-gray-600 dark:text-white px-4">
-        <p className="py-2 px-4 w-full text-black text-lg    dark:bg-gray-800 dark:border-gray-600">
-          Sponsored
-        </p>
+        
       </div>
       {/* add */}
-      <div className="add mt-5">
-        <div class="flex items-center dark:bg-gray-700 dark:border-gray-600 dark:text-white px-4 cursor-pointer">
-          <img className=" w-36 text-[#056BE1] rounded-lg" src={wp}  alt="" />
-          <p className=" px-4 w-full text-black text-[15px]   dark:bg-gray-800 dark:border-gray-600">
-            Wrodpress developemnt
-          </p>
-        </div>
+      <div className="flex items-center cursor-pointer">
+      <div className='w-11 h-11 bg-gray-300 m-4 rounded-full '
+              style={{
+                background:`url(${imran})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+              }}>
+              </div>
+              <p className="">Md Imran Hossain</p>
+              
+              <p className="text-[#23a4fa] font-bold ml-5 ">Switch</p>
       </div>
-        {/* birthday */}
-      <div class="flex items-center  hover:bg-[#E4E6E9] dark:bg-gray-700 dark:border-gray-600 dark:text-white px-4">
-        <p className="py-2 px-4 w-full text-black text-lg    dark:bg-gray-800 dark:border-gray-600">
-          Birthday
-        </p>
-      </div>
+      
       <div className="add mt-5">
         <div class="flex items-center dark:bg-gray-700 dark:border-gray-600 dark:text-white px-4">
-        <img  src={giftbox} className="w-10" alt="" />
-          <p className=" px-4 text-black text-[15px] text-left  w-[250px] dark:bg-gray-800 dark:border-gray-600">
-           Adom and Anna have 
-           birthdays today
+      
+          <p className=" px-4 text-gray-500 text-[20px] font-bold text-left  w-[280px] dark:bg-gray-800 dark:border-gray-600">
+          Suggestions For You
+          </p>
+          <p className=" px-4 text-gray-black text-[16px] font-bold text-left  w-[250px] dark:bg-gray-800 dark:border-gray-600">
+          See All
           </p>
         </div>
       </div>

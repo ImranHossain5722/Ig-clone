@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import imran from "../../Assets/Images/story_image.jpg";
+import commentsImag from "../../Assets/Images/bubble-chat.png";
 import { GiEarthAmerica } from "react-icons/gi";
 import { BsThreeDots } from "react-icons/bs";
 import Pogramming from "../../Assets/Images/post1.jpg";
@@ -14,6 +15,10 @@ import { comment } from "postcss";
 import { AiOutlineLike } from "react-icons/ai";
 import { BiComment } from "react-icons/bi";
 import { RiShareForwardLine } from "react-icons/ri";
+import { AiOutlineHeart} from "react-icons/ai";
+import { FiSend } from "react-icons/fi";
+import Post from "../../Components/Post/Post";
+
 const ShowPost = ({singlePost}) => {
 
   //  console.log(singlePost)
@@ -50,7 +55,7 @@ const ShowPost = ({singlePost}) => {
               <div className="">
                 {/* post time */}
                 <small className="flex gap-1 items-center relative top-8 left-16 text-gray-500 font-semibold">
-                {post_time}. <GiEarthAmerica />{" "}
+                
                 </small>
               </div>
             </div>
@@ -74,41 +79,32 @@ const ShowPost = ({singlePost}) => {
 
                 {/* imoje */}
               <div className="flex gap-1">
-                  <img className="w-6 h-6" src={likeImage} alt=""/>
-                  <img className="w-6 h-6" src={heart} alt=""/>
-                  <p>{post_likes}</p>
-                  {/* <img className="w-6 h-6" src={care} alt=""/>
-                  <img className="w-6 h-6" src={angry} alt=""/>
-                  <img className="w-6 h-6" src={sad} alt=""/>
-                  <img className="w-6 h-6" src={haha} alt=""/>
-                  <img className="w-6 h-6" src={wow} alt=""/> */}
+              <div className="lg:flex topbarIconItem p-2">
+                < AiOutlineHeart className="text-[30px]"/>
+              </div>
+              <div className=" lg:flex topbarIconItem p-2">
+                <img className="w-8 h-8 " src={commentsImag } />
+              </div>
+              <div className=" lg:flex topbarIconItem p-2">
+                <FiSend className="text-[30px]"/>
+              </div>
+                
+                 
 
               </div>
               {/* comment */}
               <div className="flex hover:underline cursor-pointer">
-                <p>  {conments.length} Comments</p>
+              
                
               </div>
             </div>
                
-               <div className=" flex justify-between p-4 px-8 mx-8 pb-4 border-y-2
-
-">
-                      <div className="flex items-center gap-1 hover:bg-gray-200 p-2 cursor-pointer" onClick={likeHandeler} >
-                      <AiOutlineLike  /> 
-                          <p>Like</p>
-                      </div>
-                      <div className="flex items-center gap-1">
-                      <BiComment/>
-                          <p>Comment</p>
-                      </div>
-                      <div className="flex items-center gap-1">
-                     <RiShareForwardLine />
-                          <p>Share</p>
-                      </div>
-
-
-               </div>
+            <p className="px-4">
+              {post}
+              <p className="py-5 text-gray-400 ">  View all {conments.length} Comments</p>
+              <p className="py-2 text-gray-400 ">  {post_time}  ago</p>
+              <Post/>
+            </p>
 
 
 

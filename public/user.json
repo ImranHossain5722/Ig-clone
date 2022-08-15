@@ -99,6 +99,7 @@
                 "user_photo_url" : "https://i.ibb.co/rdvKmKH/photo-man.jpg",
                 "post_image_url" : "https://i.ibb.co/y8xbqF2/thumb-1572360695.jpg",
                 "post_likes" : 2,
+                "post_time" :"1 hrs",
                 "conments" : [
                     {
                         "user_id" : "1",

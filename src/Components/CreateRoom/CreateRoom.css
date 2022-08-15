@@ -1,9 +1,13 @@
-.swiper-button-disabled {
+/* .swiper-button-disabled {
 
     display: none !important;
+} */
+
+.avter-image{
+    padding: 5px;
+    background-image: linear-gradient(to right top, #fec600, #ff8f27, #ff4c59, #ff008e, #d100c3);
+     
 }
-
-
 .swiper-slide{
 
     flex-shrink: 0;
@@ -20,8 +24,8 @@
 
 }
 .swiper_button {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,7 +49,7 @@
     cursor: pointer;
     position: absolute;
     right: 0;
-    top: 15px ;
+    top: 35px ;
     z-index:5;
     background: rgba(244, 241, 241, 0.993);
 }
@@ -62,7 +66,7 @@
     cursor: pointer;
     position: absolute;
     left: 0;
-    top:15px;
+    top:35px;
     z-index:2;
     background: rgba(255, 247, 247, 0.979);
 }

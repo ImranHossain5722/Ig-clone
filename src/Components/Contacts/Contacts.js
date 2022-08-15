@@ -16,11 +16,13 @@ const Contacts = ({user}) => {
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
               }} >
-                      <BsDot className='relative top-3 left-4  text-[#2F9A48] text-[45px] '/>
+                     
                 
               </div>
+                <div className='flex items-center justify-center'>
                <p>{user_name}</p>
-
+               <p className='ml-6 text-[#23a4fa] font-bold ' >Follow</p>
+               </div>
             </div>
         </div>
     );

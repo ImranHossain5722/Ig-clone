@@ -8,14 +8,14 @@ const Home = () => {
   return (
     <div>
       <div className="flex justify-between ">
-        <div className="mt-[80px] bg-[#F0F2F5] w-[20%]  hidden lg:block">
+        <div className="bg-[#FAFAFA w-[10%]  hidden lg:block">
           <LeftSideBar />
         </div>
-        <div className="NewFeed mt-[80px] flex mx-auto h-full bg-[#F0F2F5] w-[55%]">
+        <div className="NewFeed mt-[60px] flex mx-auto h-full  w-[60%]">
           <NewsFeed />
         </div>
         <div
-          className=" mt-[80px] bg-[#F0F2F5]  w-[22%] hidden lg:block"  >
+          className=" mt-[60px] bg-[#FAFAFA]  w-[30%] hidden lg:block"  >
           <RightSideBar />
         </div>
       </div>
